@@ -14,11 +14,26 @@ body{
     margin:0;
     padding:20px;
     background:#111;
-    font-family:Arial, sans-serif;
+    color:#fff;
+    font-family:Arial,sans-serif;
 }
-.player-container{
-    max-width:500px;
-    margin:50px auto;
+
+.wrapper{
+    max-width:700px;
+    margin:30px auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.audio-player{
+    margin-bottom:30px;
+}
+
+audio{
+    width:100%;
 }
 </style>
 
@@ -27,19 +42,44 @@ body{
 
 <body>
 
-<div class="player-container">
-    <div class="myCast" id="radio1"></div>
+<div class="wrapper">
+
+<h1>Radio Fantasy Praha</h1>
+
+<div class="audio-player">
+    <audio controls preload="none">
+        <source src="https://streamsrv-fantasy.kechit.eu/fantasy_praha_main" type="audio/mpeg">
+        Ihr Browser unterstützt kein HTML5-Audio.
+    </audio>
+</div>
+
+<div id="radio1" class="myCast"></div>
+
 </div>
 
 <script src="js/myCast.min.js"></script>
 
 <script>
-$("#radio1").myCast({
-    URL: "https://streamsrv-fantasy.kechit.eu",
-    version: "icecast",
-    mount_point: "fantasy_praha_main"
+$(document).ready(function(){
 
+    $("#radio1").myCast({
+        URL: "https://streamsrv-fantasy.kechit.eu",
+        version: "icecast",
+        mount_point: "fantasy_praha_main",
+        bg: "darkblue",
+        accent: "amber",
+        artwork: true,
+        blur: true,
+        blur_opacity: 0.20,
+        autoplay: false,
+        volume: 0.8
+    });
+
+});
 </script>
 
 </body>
 </html>
+
+Dein Stream scheint tatsächlich unter
+
