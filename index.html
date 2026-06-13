@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>myCast - Fantastic HTML5 Shoutcast & Icecast Radio Web Player</title>
+<link href="css/myCast.min.css" rel="stylesheet" type="text/css">
+<link href="demo_files/demo.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="shortcut icon" href="demo_files/favicon.ico" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+<div class="header-bg2"></div>
+<div class="header-bg"></div>
+
+<div class="panel-wpr">
+	<div class="panel">
+		<div class="logo-wpr">
+			<div class="logo"></div>
+			<div class="logo-txt">myCast</div>
+		</div>
+		<div class="buttons-wpr">
+			<div class="btn-r"><a href="#examples">Examples</a></div>
+			<div class="btn-r btn-buy"><a href="https://codecanyon.net/item/mycast-fantastic-html5-shoutcast-radio-player/21049086" target="_blank">Buy Now</a></div>
+		</div>
+	</div>	
+		
+</div>
+<div class="banner-wpr">
+	<div class="banner">
+		<div class="box">
+			<span class="title">Fantastic HTML5 Shoutcast & Icecast Radio Player</span>
+			<p class="txt">
+				Built in HTML5/jQuery/CSS, based on Material Design color palette. Animated and Mobile Ready!
+			</p>
+		</div>
+	</div>
+</div>
+<div class="main-wpr">
+	<div class="main">
+		<h1>Features</h1>		
+		<div class="features">
+			<i class="material-icons">flash_on</i>
+			<div class="title">Shoutcast & Icecast</div>
+			<p>
+			Compatible with Shoutcast 1/2 & Icecast 2.
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">code</i>
+			<div class="title">Native Browser Code</div>
+			<p>
+			Built in pure HTML5, CSS, jQuery. No Server-side script needed. 
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">https</i>
+			<div class="title">HTTPS</div>
+			<p>
+			Works on websites with ssl(https) enabled.
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">get_app</i>
+			<div class="title">Fast Data Gathering</div>
+			<p>
+			Direct requests to Server via JSONP. Fast and automatic update.
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">devices</i>
+			<div class="title">Responsive Design</div>
+			<p>
+			Optimized to look great on Desktop, Tablet and Phone!
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">color_lens</i>
+			<div class="title">Color Customization</div>
+			<p>
+			Choose any Material Design color for both background and play/pause button.
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">burst_mode</i>
+			<div class="title">Album Artwork</div>
+			<p>
+			iTunes API is used to retrieve all the album artwork.
+			</p>
+		</div>		
+		<div class="features">
+			<i class="material-icons">storage</i>
+			<div class="title">Server Info</div>
+			<p>
+			Show your current listeners, stream quality, genre, etc...
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">history</i>
+			<div class="title">Song History</div>
+			<p>
+			Display the last songs played on your radio station.
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">blur_on</i>
+			<div class="title">Animated</div>
+			<p>
+			Smooth animated transitions between songs. 
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">language</i>
+			<div class="title">Multi Language</div>
+			<p>
+			Ready for English, Spanish, Portugese, French and Italian. 
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">layers</i>
+			<div class="title">Multiple Instances</div>
+			<p>
+			Play more than one stream on the same page. 
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">share</i>
+			<div class="title">Social Share</div>
+			<p>
+			Share your Radio on Facebook, Twitter & Google Plus. 
+			</p>
+		</div>
+		<div class="features">
+			<i class="material-icons">build</i>
+			<div class="title">Support & Updates</div>
+			<p>
+			100% Guaranteed support. Updates and improvements in the future.
+			</p>
+		</div>
+		<h1>Settings</h1>
+		<p>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+				<th>Type</th>
+			</tr>
+			<tr>
+				<td>URL:</td>
+				<td>URL to your radio stream</td>
+				<td>http://server:port</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td class="td-set">version:</td>
+				<td>Version of Shoutcast (1/2) or Icecast</td>
+				<td>1, 2, icecast</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>stream_id:</td>
+				<td>The stream id of your DNAS 2 Server</td>
+				<td>1, 2, 3, etc..</td>
+				<td>Integer</td>
+			</tr>
+			<tr>
+				<td>mount_point:</td>
+				<td>Mount Point of your Icecast stream</td>
+				<td>path/to/stream</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>type:</td>
+				<td>Used to correct play of DNAS 1 Stream (don't change it)</td>
+				<td>/;type=mp3</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>streampath:</td>
+				<td>The stream path to your DNAS 2 Server</td>
+				<td>/stream?icy=http</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>enable_cors:</td>
+				<td>For Shoutcast v2 users. Set to true if your website is https</td>
+				<td>true, false</td>
+				<td>Boolean</td>
+			</tr>
+			<tr>
+				<td>cors:</td>
+				<td>Cors proxy (don't touch it)</td>
+				<td>https://cors-anywhere.herokuapp.com</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>artwork:</td>
+				<td>Display album artwork. If set to false, logo will be shown.</td>
+				<td>true, false</td>
+				<td>Boolean</td>
+			</tr>
+			<tr>
+				<td>logo:</td>
+				<td>This image will be used as album cover fallback</td>
+				<td>pathto/your/logo.jpg</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>bg:</td>
+				<td>Background for the player</td>
+				<td>red, pink, purple, deeppurple, indigo, <br>blue, lightblue, cyan, teal, green,<br> lightgreen, lime, yellow, amber, orange, <br>deeporange, brown, grey,<br> bluegrey, darkblue, black, white </td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>accent:</td>
+				<td>Accent color applied to play/pause button and slider thumb</td>
+				<td>red, pink, purple, deeppurple, indigo, <br>blue, lightblue, cyan, teal, green,<br> lightgreen, lime, yellow, amber, orange, <br>deeporange, brown, grey,<br> bluegrey, darkblue, black</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>vertical_layout:</td>
+				<td>Sets vertical layout (Big artwork)</td>
+				<td>false, true</td>
+				<td>Boolean</td>
+			</tr>
+			<tr>
+				<td>blur:</td>
+				<td>Add a blur effect with the album cover to the player background</td>
+				<td>true, false</td>
+				<td>Boolean</td>
+			</tr>
+			<tr>
+				<td>blur_opacity:</td>
+				<td>Blur effect opacity (if enabled)</td>
+				<td>0.01 - 1</td>
+				<td>Integer</td>
+			</tr>
+			<tr>
+				<td>lang:</td>
+				<td>Prefered language for Server Info</td>
+				<td>en, es, pt, fr, it</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>src:</td>
+				<td>Used for play/pause function (leave it blank)</td>
+				<td>none</td>
+				<td>Empty</td>
+			</tr>
+			<tr>
+				<td>volume:</td>
+				<td>Defines the initial volume level</td>
+				<td>0.01 - 1</td>
+				<td>Integer</td>
+			</tr>
+			<tr>
+				<td>autoplay:</td>
+				<td>Play radio stream on page load</td>
+				<td>true, false</td>
+				<td>Boolean</td>
+			</tr>
+		</table>
+		</p>
+		<h1>Installation</h1>
+		<div class="usage">
+			<p>First make sure jQuery is include, if not, include it</p>
+			<div class="code">&lt;script src="https://code.jquery.com/jquery-3.0.0.min.js"&gt;&lt;/script&gt;</div>
+			<p>Then include myCast files</p>
+			<div class="code">&lt;link href="css/myCast.min.css" type="text/css" rel="stylesheet"&gt; (within &lt;head&gt; tag)<br>
+			&lt;script src="js/myCast.min.js"&gt;&lt;/script&gt; (within &lt;body&gt; tag just before calling player script)</div>
+			<p>Add a parent div to the body of your html page, with a unique id and myCast class</p>
+			<div class="code">&lt;div class="myCast" id="stream1"&gt;&lt;/div&gt;			
+			</div>
+			<p>Finally call the script in the body of your html page</p>
+			<div class="code">
+			<pre>&lt;script&gt;
+    $("#stream1").myCast({
+        URL: "http://ip:port",
+        version: "2",
+    });
+&lt;/script&gt;</pre>
+			</div>
+			<h1 id="examples">Examples</h1>
+			<div class="myCast" id="stream1"></div>
+
+
+
+		<div class="code">
+			<pre>$("#stream1").myCast({
+    URL: "http://s01.webradio-solutionscast.com:4060",
+    version: "2"
+});</pre>
+			</div>
+			
+			<div class="myCast" id="stream2"></div>
+			
+			<div class="code">
+			<pre>$("#stream2").myCast({
+    URL: "http://149.56.195.94:8416",
+    version: "icecast",
+    mount_point: "autodj",
+    bg: "green",
+    accent: "amber",
+    lang: "es",
+    blur: true,
+    blur_opacity: 0.16 	
+});</pre>
+			</div>
+			<div class="myCast" id="stream3"></div>
+			<div class="code">
+			<pre>$("#stream3").myCast({
+    URL: "http://s01.webradio-solutionscast.com:4060",
+    version: "2",
+    bg: "purple",
+    accent: "pink",
+    vertical_layout: true
+});</pre>
+			</div>
+		</div>
+		<br><br>
+		<div style="text-align: center; color: #333; font-size: 24px;">For support, customization or freelance work please contact me at @</div>	
+		<div class="contact-btn">shoutcastapps@gmail.com</div>
+	</div>
+</div>
+<div class="go"></div>
+<div class="foot">© 2017, made with  <i class="material-icons" style="font-size: 14px">favorite</i> by <a href="https://codecanyon.net/user/shoutcastapps" target="_blank">ShoutcastApps</a></div>
+<script src="js/myCast.min.js"></script>
+<script>
+    $("#stream1").myCast({
+	    URL: "http://s01.webradio-solutionscast.com:4060",
+		version: "2",
+    });
+</script>
+<script>
+    $("#stream2").myCast({
+	    URL: "http://149.56.195.94:8416",
+		version: "icecast",
+		mount_point: "autodj",
+	    bg: "green",
+		accent: "amber",
+		lang: "es",
+		blur: true,
+		blur_opacity: 0.16
+    });
+</script>
+<script>
+    $("#stream3").myCast({
+	    URL: "http://s01.webradio-solutionscast.com:4060",
+		version: "2",
+	    bg: "purple",
+		accent: "pink",
+		vertical_layout: true
+    });
+</script>
+
+
+
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+     //console.log(scroll);
+    if (scroll >= 50) {
+        //console.log('a');
+        $(".panel-wpr").addClass("panel-wpr-bg");
+    } else {
+        //console.log('a');
+        $(".panel-wpr").removeClass("panel-wpr-bg");
+    }
+});
+</script>
+</body>
+</html>
